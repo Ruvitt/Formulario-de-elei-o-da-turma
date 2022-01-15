@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Formulario da turma</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h2>Formulario</h2>
+      <form method="post" action="dados.html">
+        <div class="input-field">
+          <input
+            type="text"
+            name="matricula"
+            id="username"
+            placeholder="Escreva sua matricula"
+          />
+          <div class="underline"></div>
+        </div>
+
+        <div class="input-field">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Escreva sua senha"
+          />
+          <div class="underline"></div>
+        </div>
+
+        <div class="input-field">
+          <strong>Informe seu sexo:</strong>
+          <br />
+          <label> <input type="radio" name="sexo" id="sexo" />Masculino </label>
+
+          <label> <input type="radio" name="sexo" id="sexo" />Feminino </label>
+        </div>
+
+        <div class="input-field">
+          <strong>Para quem é seu voto:</strong>
+
+          <select name="voto" id="voto">
+            <option value="blank" selected>Nenhum</option>
+            <option value="joc">João carlos</option>
+            <option value="ren">Renan</option>
+            <option value="ria">Pedro Rian</option>
+          </select>
+        </div>
+
+        <div class="input-field">
+          <strong>Para o que é seu voto:</strong>
+
+          <select name="voto" id="voto_pericia">
+            <option value="blank" selected>Nenhum</option>
+            <option value="Lider">Lider</option>
+            <option value="vice">vice-lider</option>
+            <option value="retardado">Retardado</option>
+            <option value="retardado">Doido</option>
+            <option value="retardado">intelectual</option>
+          </select>
+        </div>
+
+        <div class="input-field">
+          <strong>Você concorda em ter a opinião exposta?</strong>
+          <br />
+          <label>
+            <input type="checkbox" name="checkbox" value="concorda" />
+            Concordo
+          </label>
+          <label>
+            <input type="checkbox" name="checkbox" value="discorda" />
+            Discordo
+          </label>
+        </div>
+
+        <div class="input-field">
+          <strong>Deixe uma mensagem:</strong>
+          <br />
+          <textarea
+            name="opiniao"
+            id="opiniao"
+            placeholder="Escreva sua mensagem"
+          ></textarea>
+        </div>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
+  </body>
+</html>
